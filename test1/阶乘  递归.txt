@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int factoral(int n)
+{
+	if(n <= 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return n*factoral(n - 1);
+	}
+}
+
+int main()
+{
+	int n ;
+	scanf("%d",&n);
+	printf("%d",factoral(n));
+	return 0;
+}

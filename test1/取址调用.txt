@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+void add(int* pnum)
+{
+	(*pnum)++;
+}
+int main()
+{
+	int num = 0;
+	add(&num);
+	printf("%d", num);
+}

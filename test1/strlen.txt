@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int strlen_my(char* str)
+{
+	if(*str != '\0')
+		{
+		return 1 + strlen_my(str+1);
+		}
+	else
+		{
+		return 0;
+		}
+}
+
+int main()
+{
+	char arr[] = "bit";
+	printf("%d\n",strlen_my(arr));
+	
+	return 0;
+}

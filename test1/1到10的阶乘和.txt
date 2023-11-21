@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+	int n = 10;
+	int ret = 1;
+	int i = 0;
+	int mul = 0;
+	for (n = 10;n >= 1;n--)
+	{
+		for (i = 1;i <= n;i++)
+		{
+			ret *= i;
+		}
+		mul += ret;
+		ret = 1;
+	}
+	printf("%d", mul);
+	return 0;
+}
+
+
+
+
+改进：
+#include <stdio.h>
+
+int main()
+{
+	int ret = 0;
+	int n = 1;
+	int i = 1;
+	for (i = 1;i <= 10;i++)
+	{
+		n *= i;
+		ret += n;
+	}
+	printf("%d", ret);
+	return 0;
+}

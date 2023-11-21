@@ -1,0 +1,55 @@
+#include<stdio.h>
+
+int tell(int x)
+{
+	int i,y;
+	for (i = 2;i < x;i++)
+	{
+		if (x % i == 0)
+			break;
+	}
+	if (i == x)
+		y = 1;
+	else
+		y = 2;
+	return y;
+}
+int main()
+{
+	int a;
+	scanf_s("%d", &a);
+	int ret = tell(a);
+	if (ret == 1)
+		printf("该函数为素数");
+	else
+		printf("该函数不是素数");
+	return 0;
+
+
+
+
+
+
+
+#include<stdio.h>
+
+void tell(int x)
+{
+	int i;
+	for (i = 2;i < x;i++)
+	{
+		if (x % i == 0)
+			break;
+	}
+	if (i == x)
+		printf("该函数为素数");
+	else
+		printf("该函数不是素数");
+}
+int main()
+{
+	int a;
+	scanf_s("%d", &a);
+	 tell(a);
+	return 0;
+}

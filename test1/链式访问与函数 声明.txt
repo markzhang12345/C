@@ -1,0 +1,22 @@
+printf是int函数，返回值是打印的字符个数。
+
+
+include<stdio.h>
+
+int main()
+{
+	printf("%d", printf("%d",printf("%d",43)));
+	return 0;
+}
+
+
+打印结果为4321.
+
+
+若函数定义在主函数后，要在使用前声明。
+定义是更强有力的声明。
+(多用于不同源文件之间的函数调用) 在源文件开头引用头文件#include“函数名.h”  
+在头文件中声明。
+
+
+导入静态库：#pragma comment(lib,"sub.lib")
